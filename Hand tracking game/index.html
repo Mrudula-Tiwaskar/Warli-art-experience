@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mohalla: An interactive Warli folk art creation game powered by hand gesture tracking and authentic tribal motifs.">
+  <meta name="theme-color" content="#1f0d06">
+  <title>Mohalla: Warli Heritage Art</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <canvas id="stage" width="1280" height="720" role="img" aria-label="Warli Art Canvas"></canvas>
+  </div>
+
+  <!-- Camera video feed consumed by MediaPipe Tasks Vision (hidden from direct view) -->
+  <video id="video" autoplay playsinline muted></video>
+
+  <!-- Screen overlays managed by the screen state machine -->
+  <div id="screen-container"></div>
+
+  <!-- Core ES Module application entry point -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
